@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0%;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  color: #fff;
+  cursor: pointer;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+
+  &-side {
+    transition: all 0.7s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    &-front {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px 30px;
+      border-radius: 15px;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* &-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px 30px;
+      border-radius: 15px;
+      overflow: hidden;
+      z-index: 1;
+    }*/
+  }
+  /* &:hover &-side-front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &-side-back {
+    transform: rotateY(0);
+  }*/
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row img {
+  width: 80px;
+}
+
+.card-no {
+  font-size: 35px;
+  margin-top: 60px;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px 5px;
+}
+
+.nobull1 {
+  margin-bottom: 3px;
+}
+
+.expiry {
+  position: absolute;
+  left: 80%;
+  top: 78%;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px 5px;
+}
+
+.card-holder {
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  top: 78%;
+  border-style: solid;
+  padding: 5px 5px;
+  border-radius: 8px;
+}
+
+.bar {
+  background: #222;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  height: 60px;
+}
+
+.cvv-text p {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+}
+
+.cvv-area {
+  background: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+//for credit-card-form
+
+.form-container {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-div {
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+}
+
+.alert {
+  text-align: center;
+  margin-top: 20px;
+}
